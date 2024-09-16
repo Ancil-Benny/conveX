@@ -10,7 +10,7 @@ function updateProgress(progress) {
   counter.textContent = `${progress}%`;
 }
 
-// Check if the page has been loaded before
+// Check page loaded ?
 if (sessionStorage.getItem('isReloaded')) {
   updateProgress(0);
   // document.body.style.overflow = 'hidden';
@@ -28,15 +28,15 @@ if (sessionStorage.getItem('isReloaded')) {
 
   if (image.complete) {
     hideLoader();
-    document.body.style.overflowY = 'auto'; // Set overflow property here
+    document.body.style.overflowY = 'auto'; 
   } else {
     image.addEventListener('load', () => {
       hideLoader();
-      document.body.style.overflowY = 'auto'; // Set overflow property here
+      document.body.style.overflowY = 'auto'; 
     });
   }
 } else {
-  // If the page hasn't been loaded before, set the 'isReloaded' item in sessionStorage
+  // If the page !loaded - 'isReloaded'
   sessionStorage.setItem('isReloaded', true);
   loadingScreen.style.display = 'none';
 }

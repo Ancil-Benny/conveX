@@ -1,6 +1,6 @@
-// Check if "isFirstLoad" item exists in sessionStorage
+// "isFirstLoad" item  in sessionStorage ?
 if (!sessionStorage.getItem("isFirstLoad")) {
-    // Set "isFirstLoad" item in sessionStorage
+    //  !"isFirstLoad" item in sessionStorage
     sessionStorage.setItem("isFirstLoad", "true");
 
     const textElement = document.getElementById("text");
@@ -18,15 +18,16 @@ if (!sessionStorage.getItem("isFirstLoad")) {
             textElement.innerHTML += text.charAt(index);
             setTimeout(() => typeText(text, index + 1), 25); //  typing speed 
         } else {
-            // Animation to clear the text
+            // clear the text anim
             setTimeout(clearText, 400); //  delay before clearing 
         }
+        
     }
 
     function clearText(index = textElement.innerHTML.length - 1) {
         if (index >= 0) {
             textElement.innerHTML = textElement.innerHTML.slice(0, -1);
-            setTimeout(() => clearText(index - 1), 25); // Adjust clearing speed 
+            setTimeout(() => clearText(index - 1), 25); // clearing speed 
         } else {
             //move to the next text
             setTimeout(() => {
@@ -36,7 +37,7 @@ if (!sessionStorage.getItem("isFirstLoad")) {
         }
     }
 
-    // Start the animation with the first text
+    // Start the anim with the first text
     typeText(texts[textIndex]);
 
    
@@ -48,7 +49,7 @@ if (!sessionStorage.getItem("isFirstLoad")) {
         }, 4000); // Delay 
     });
 } else {
-    // If "isFirstLoad" item exists in sessionStorage, hide the preloader immediately
+    // "isFirstLoad"  in sessionStorage, hide the preloader 
     const loader = document.querySelector('.loader');
     loader.classList.add('hidden');
 }

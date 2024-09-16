@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-     <html lang="en">
-        <head>
+   <html lang="en">
+     <head>
           <link rel="preload" href="./concert.jpg" as="image">
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,55 +8,57 @@
             <link rel="stylesheet" href="mainpreloader.css">
             <link rel="stylesheet" href="style.css">
          
-<link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+            <!-- link to font awesome icons -->
+            <link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+            <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css' rel="stylesheet">
             <!-- Link to (Boxicons) -->
             <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-            <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css' rel="stylesheet">
-<!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-        </head>
-    </head>
-    <body>
-      <div id="loading-screen">
-        <div id="progress-bar"></div>
-        <div id="progress-counter">0%</div>
-      </div>
+            
+            <!-- Bootstrap CSS -->
+           <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+           <title>evtmgt</title>
+      </head>
+
+      <body>
+
+        <!-- secondary preloader -->
+        <div id="loading-screen">
+         <div id="progress-bar"></div>
+         <div id="progress-counter">0%</div>
+        </div>
        
-
-  <div class="loader">
-
-    <div class="typing-preloader">
-        <div class="container">
+        <!-- preloader screen -->
+        <div class="loader">
+         <div class="typing-preloader">
+          <div class="container">
             <i class='bx bx-search-alt'></i>
             <div class="text-container">
                 <div id="text"></div>
                 <div id="cursor"></div>
             </div>
+         </div>
+         </div>
+
+         <!-- preloader text -->
+        <div class="loader-text">convex events</div>
+        <div class="loader-img"></div>
         </div>
-    </div>
-    <div class="loader-text">developed by blanc</div>
-      <div class="loader-img"></div>
-    </div>
   
     
-    
- <div class="background">
-        <img src="./concert.jpg" alt="LOADING">
-        <div class="box">
+    <!-- hero section -->
+        <div class="background">
+         <img src="./concert.jpg" alt="LOADING">
+         <div class="box">
             <div class="date">Default Date</div>
             <div class="separator"></div>
             <div class="title">Default Title</div>
         </div>
-    </div>
-
-
-
+        </div>
 
         <!-- Navigation bar -->
         <nav class="mainnavbar">
-<div id="nav-logo"> <span class="hover-color">evt</span>mgt </div>
-
-<div id="nav-items">
+        <div id="nav-logo"> <span class="hover-color">conv</span>X </div>
+         <div id="nav-items">
             <a href="#">Home</a>
             <a href="event/eventhash.html">Events</a>
             <a href="user/usersign.html">User</a>
@@ -64,47 +66,41 @@
             <a href="about.html">About</a>
         </div>
 
-<form action="" class="search-form">
-  <input type="search" required placeholder="Search" >
-  <i class="fa fa-search"></i>
-</form>
-</nav>
-<!-- Search results container -->
-<div id="search-results-container">
-   
-</div>
-    
-        <!-- text -->
-        <div class="item">
-           
-            <div class="text-item">
-                <h2>welcome</h2>
-                <p>Register as new or login if already a member<br> both for organizers and users.</p>
+        <form action="" class="search-form">
+        <input type="search" required placeholder="Search" >
+         <i class="fa fa-search"></i>
+        </form>
+        </nav>
 
-                
-               
-            </div>
+        <!-- Search results container -->
+        <div id="search-results-container">
+        </div>
+    
+        <!-- hero text -->
+        <div class="item">
+          <div class="text-item">
+          <h2>welcome</h2>
+          <p>Register as new or login if already a member<br> both for organizers and users.</p>
+        </div>
         </div>
         
-    <!--<div class="divider-big"></div>-->
-    
-    <!--========================================================================================-->
-    <section class="evtscontainer">
-         
-    <div class="big-text">
-      <p class="fadein">
+<!----------------------------------------------------------------------------------->
+ <!-- info section -->
+    <section class="evtscontainer">     
+     <div class="big-text">
+       <p class="fadein">
         HOP ON EVENTS
-       
       </p>
-    </div>
+     </div>
+     
       <div class="small-texts"><p>
         Each event offers a unique opportunity to expand your horizons, hone your skills, and
         connect with a community.
-      So, seize the opportunity and immerse yourself in the enriching world of these events!
+        So, seize the opportunity and immerse yourself in the enriching world of these events!
 
-  
+     <!-- cards -->
       <section class="evtscard__container">
-        <div class="card__bx" style="--clr: #c9c8f7">
+        <div class="card__bx">
           <div class="card__data">
             <div class="card__icon">
               <i class="fa-solid fa-desktop"></i>
@@ -118,7 +114,8 @@
             </div>
           </div>
         </div>
-        <div class="card__bx" style="--clr: #c9c8f7">
+
+        <div class="card__bx">
           <div class="card__data">
             <div class="card__icon">
               <i class="fa-solid fa-users"></i>
@@ -130,7 +127,8 @@
             </div>
           </div>
         </div>
-        <div class="card__bx" style="--clr: #c9c8f7">
+
+        <div class="card__bx">
           <div class="card__data">
             <div class="card__icon">
               <i class="fa-solid fa-code"></i>
@@ -142,8 +140,7 @@
             </div>
           </div>
         </div>
-
-        <div class="card__bx" style="--clr: #c9c8f7">
+        <div class="card__bx" >
           <div class="card__data">
             <div class="card__icon">
               <i class="fa-solid fa-graduation-cap"></i>
@@ -156,7 +153,7 @@
           </div>
         </div>
 
-        <div class="card__bx" style="--clr: #c9c8f7">
+        <div class="card__bx">
           <div class="card__data">
             <div class="card__icon">
               <i class="fa-solid fa-television"></i>
@@ -170,7 +167,8 @@
         </div>
     
       </section>
-    
+
+    <!-- text section -->
       <div class="endbigtext">
         <p class="efadein">
           EXPLORE IT FURTHER
@@ -199,20 +197,16 @@
         </p></div>
        
     </section>
-
-    <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<!--------------------------------------------------------------------------------------->
+<!-- end section -->
     <div class="zoom-container">
-      
           <h2 class="zoom-heading">ANNOUNCEMENTS</h2>
-          <div class="zoom-circle"></div>
-          <p class="zoom-content"></p>
-       
+          <div class="zoom-box"></div>
+          <p class="zoom-content"></p>  
       </div>
-     
-  
-    <!--======================================================================-->
-   <p class="footertext">nil.dev</p>
-<!--========================================================================================-->
+
+      <p class="footertext">ⓒ 2023 ◢ ◤ ◣</p>
+ <!----------------------------------------------------------------------------------->
 
     <script src="loader.js"></script>
     <script src="box1.js"></script>
@@ -220,4 +214,4 @@
     <script src="preloaderbar.js"></script>
  
     </body>
-</html>
+  </html>

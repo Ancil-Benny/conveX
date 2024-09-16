@@ -4,10 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
-       
-     
+    font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
 }
+
 /*preloader*/
 #loading-screen {
   position: fixed;
@@ -37,140 +36,138 @@
 }
 
 body {
-margin:0;
-padding:0;
-    height: 100vh;
-    width: 100%;
-    background: #1c1160;
-    scroll-behavior: smooth;
-    font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
-   overflow-x: hidden;
-  
-    
+  margin:0;
+  padding:0;
+  height: 100vh;
+  width: 100%;
+  background: #1c1160;
+  scroll-behavior: smooth;
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;   
 }
 
 
 .background {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
   height:100vh;
-    overflow: hidden;
-display: flex;
-justify-content:flex-end;
+  overflow: hidden;
+  display: flex;
+  justify-content:flex-end;
 
 }
 
 .background img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 
 .mainnavbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height:13%;
-    background: #c9c8f7; /*#f4e4c8;*/
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    z-index: 100;
-    box-shadow: 0 0.1rem 1rem rgba(23, 23, 37, 0.8);
-
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:13%;
+  background: #c9c8f7; /*#f4e4c8;*/
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 100;
+  box-shadow: 0 0.1rem 1rem rgba(23, 23, 37, 0.8);
 }
+
 .mainnavbar.scrolled {
-display:none;
+  display:none;
 }
 
 
 #nav-logo{
-    color: #000;
-    font-size: 40px;
-    font-weight: 600;
-    letter-spacing: -1px;
-margin-right:100px;
-font-family: Favorit, sans-serif;
-
+  color: #000;
+  font-size: 3vw;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-right:10%;
+  font-family: Favorit, sans-serif;
 }
 
 #nav-items{
-display:flex;
-align-items:center;
-margin-right:180px;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  margin-right:30%;
 }
+
 /*  navigation links */
 #nav-items a {
-font-size: 20px;
-margin: 0 20px;   
-font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
-color: #000;
-text-decoration: none;
-position: relative;
-margin-right:40px;
+  font-size: 1.5vw;
+  margin: 0 20px;   
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  margin-right:15%;
 }
 
 /*  navigation link hover effect */
 #nav-items a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2.5px;
-    background:  #241a70;
-    bottom: -5px;
-    border-radius: 5px;
-    transform: scaleX(0);
-transform-origin: center;
-    opacity: 0;
-    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  background:  #241a70;
+  bottom: -5px;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: center;
+  opacity: 0;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
 
 
-/*  navigation link hover effect (active state) */
 #nav-items a:hover::after{
-    transform: scaleX(1);
+  transform: scaleX(1);
     opacity: 1;
 }
-/* Styling for the search bar */
+
+/* search bar */
 .search-form {
-    position: relative;
-   margin: 0 auto ;
+  position: relative;
+  margin: 0 auto ;
    
-    transition: all 1s;
-    width: 50px;
-    height: 50px;
-    background: #008080;/* #d5aa72;*/
-    border-radius: 25px;
-    border: 4px solid #000;
-    padding: 5px;
+  transition: all 1s;
+  width: 50px;
+  height: 50px;
+  background: #008080;/* #d5aa72;*/
+  border-radius: 25px;
+  border: 4px solid #000;
+  padding: 5px;
 }
 
 
 input {
-    position: absolute;
-background-color:#40309f;
-    top: 0;
-    color:#c9c8f7;/* input colr*/
-    left: 0;
-    width: 0;
-    height: 42.5px;
-    line-height: 30px;
-    outline: 0;
-    border: 0;
-    display: none;
-    font-size: 1em;
-    border-radius: 20px;
-    padding: 0 20px;
-    transition: width 1s; 
+  position: absolute;
+  background-color:#40309f;
+  top: 0;
+  color:#c9c8f7;/* input color*/
+  left: 0;
+  width: 0;
+  height: 42.5px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  display: none;
+  font-size: 1em;
+  border-radius: 20px;
+  padding: 0 20px;
+  transition: width 1s; 
     
   
 }
@@ -196,7 +193,7 @@ form:valid {
     cursor: pointer;
 }
 
-/*  expand the input field equally to both sides */
+/*  expand to both sides */
 .search-form:hover input,
 .search-form:valid input {
     width: calc(100% - 85px); 
@@ -213,7 +210,7 @@ form:valid {
     display: block;
 }
 
-/* Styling for the search results container */
+/* search results container */
 #search-results-container {
     position: fixed;
     top: 15%;
@@ -231,8 +228,8 @@ form:valid {
 .item {
     position:absolute;
     font-family: "Poppins",sans-serif;
-    top: 75%;
-    left: 10px;
+    top: 84%;
+    left: 20px;
     width: 30%;
     height: 30%;
     color:#c9c8f7;
@@ -249,32 +246,20 @@ form:valid {
 
 .text-item h2 {
     
-font-size: 50px;
+font-size: 5vw;
 	font-weight: 100;
     letter-spacing: -1px;
-	line-height: 0.9;
-	/*letter-spacing: -3.5px;*/
-    /*text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-*/
-        
+	line-height: 0.9;     
 }
 
-/* Styling for the paragraph text within the item */
+/*paragraph text within the item */
 .text-item p {
-    font-size: 16px;
+    font-size: 1.3vw;
 color:#c9c8f7;
-
-
-  
 
 }
 
 .box {
-   
     background-color: #c9c8f7;
     /*color: #e21b1b;*/
     padding: 10px;
@@ -290,25 +275,21 @@ color:#c9c8f7;
     box-shadow: 0 0.1rem 1rem rgba(23, 23, 37, 0.8);
 }
 
-
 .date {
     font-size: 19px;
     margin-right: 5px;
     color:#000;
 }
 
-
 .separator {
     width: 1px;
     height: 40px; 
-    background-color:  #38abba;
+    background-color:#38abba;
     margin: 0 5px;
 }
 
-
 .title {
-    font-size: 19px;
-    
+font-size: 19px;
 color:#000;
 }
 .divider-big{
@@ -316,56 +297,20 @@ color:#000;
     height:0.8px;
     width:50%;
     }
-    
-/*======================================================================*/
-/* Add styles for the white container */
-/*.mainwhite-container {
-    background-color: #231875;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px; /* Adjust the padding as needed 
-height:100%;
-
-}*/
-/*======================================================================*/
-/* H SECTION 
-.scroll-container{
-    font-family: 'IBM Plex Sans', sans-serif;
-    
-    background-color: #c9c8f7;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    scroll-behavior: smooth;
-    font-weight: bold;
-    overflow-x: hidden;
-
-}*/
-
-  /*======================================================================*/
-
-
-
+  
 @media screen and (min-width: 968px) {
   :root {
     --normal-font-size: 1rem;
   }
 }
-/*====================--------------------====================*/
+
+
 .evtscontainer {
   max-width: 100%;
   width: 100%;
- 
- /* padding: 3rem 0;*/
-  
   display: grid;
   place-items: center;
   background: #1b1763;
-  
-  
 }
 
 .big-text {
@@ -377,7 +322,6 @@ height:100%;
   text-align: center;
   top: 7rem;
   font-weight: 900;
-  
 }
 .small-texts {
   font-size: 1.5vw;
@@ -388,7 +332,6 @@ height:100%;
   text-align: center;
   top: 6rem;
   font-weight: 300;
-  
 }
 .endbigtext {
   font-size: 9vw;
@@ -399,22 +342,19 @@ height:100%;
   text-align: center;
   font-weight: 900;
   opacity: 0.3;
-  
 }
 .endsmalltext{
   font-size: 1.5vw;
   position: relative;
-  bottom:40vh;
+  bottom:30vh;
   width: 100%;
   color: #c9c8f7;
-  text-align: center;
+  text-align:justify;
   font-weight: 100;
  
   opacity: 0.5;
 }
 
-
-/*==================== -----------------====================*/
 .evtscard__container {
   display: flex;
   flex-wrap: wrap;
@@ -430,6 +370,7 @@ z-index: 2;
 
 }
 .card__bx {
+  --clr: #c9c8f7;
   --dark-color: #2e2e2e;
   --dark-alt-color: #777777;
   --white-color: #ffffff;
@@ -559,13 +500,6 @@ z-index: 2;
   color: #000;
   background-color: var(--clr);
 }
-/*==============================================*/
-.zoom-heading {
-   
-  color: #c9c6f7;
-  font-size: 6vw;
-  
-}
 
 .zoom-container {
   height: 70%;
@@ -577,8 +511,13 @@ z-index: 2;
   background-color: #1b1763;
 
 }
-
-.zoom-circle {
+.zoom-heading {
+   
+  color: #c9c6f7;
+  font-size: 6vw;
+ 
+}
+.zoom-box {
   height: 20vw;
   width: 55vw;
 
@@ -588,7 +527,7 @@ z-index: 2;
   flex-direction: column;
   position: absolute;
   justify-self: center;
-  top: 55%;
+  margin-top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 8px 8px 8px 8px;
@@ -617,16 +556,13 @@ z-index: 2;
 .fade-text {
   animation: fadeInOut 4s infinite;
 }
-
-
 .footertext{
 
     color: #c9c8f7;
     font-size: 15px;
-
   background-color: #1b1763;
-
     text-align: center;
+    margin-bottom: 10px;
   }
 
   
