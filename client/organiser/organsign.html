@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>nil.dev</title>
+    <link rel="stylesheet" href="usersign.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="toast" class="toast"></div>
+  
+    <div class="login-section">
+        <button class="back-button">BACK</button>
+        <div id="particles-js"></div>
+        <div class="form-box login">
+            <form action="">
+                <h2>Sign In</h2>
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-envelope'></i></span>
+                    <input type="email" id="login-email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                    <input type="password" id="login-password" required>
+                    <label>Password</label>
+                </div>
+
+                <button type="button" id="login-btn">Login In</button>
+
+              
+                
+
+               
+                <div class="create-account">
+                    <p>Create A New Account? 
+                        <a href="#" class="register-link">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <form action="">
+                <h2>Sign Up</h2>
+
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-user'></i></span>
+                    <input type="text" id="signup-username" required>
+                    <label>MGT ID</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-user'></i></span>
+                    <input type="text" id="signup-organname" required>
+                    <label>Org Name</label>
+                </div>
+
+            
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-envelope'></i></span>
+                    <input type="email" id="signup-email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <label>Email</label>
+                </div>
+
+             
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                    <input type="password" id="signup-password" required minlength="4">
+                    <label>Password</label>
+                </div>
+
+               
+                
+
+                <button type="button" id="signup-btn">Sign Up</button>
+
+               
+                <div class="create-account">
+                    <p>Already Have An Account? 
+                        <a href="#" class="login-link">Sign In</a></p>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+   
+
+
+<script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script> 
+<script src='organsign.js'></script> 
+<script src='signineffects.js'></script>
+<script src='userparticle.js'></script> 
+
+
+</body>
+
+</html>

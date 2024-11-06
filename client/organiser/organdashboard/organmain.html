@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="usermyeventsstyle.css">
+    <link rel="stylesheet" href="userdashedit.css">
+    <link rel="stylesheet" href="organadd.css">
+
+
+  </head>
+  <body>
+    <div class="solid-bar">
+      <h1>DASHBOARD</h1> 
+  </div>
+  
+    <div class="wrapper">
+      <div class="sidebar">
+        <div class="profile">
+          <div class="logo">
+          </div>
+          <img src="images/icons/profile1.svg" alt="Logo" class="profile-img" />
+          <div class="profile-content">
+            <h2 class="name text-white">12345</h2>
+            <span class="position text-dark">xyz@gmail.com</span>
+          </div>
+        </div>
+
+        <ul class="menu">
+          <li class="slist active">
+            <a class="slink" href="#">
+              <img src="images/icons/myevents.svg" class="sidebaricons" alt="icon" />
+              <span>My Events</span>
+            </a>
+          </li>
+          <li class="slist">
+            <a class="slink" href="#">
+              <img src="images/icons/addnew.svg" class="sidebaricons" alt="icon" />
+              <span>Add New</span>
+            </a>
+          </li>
+          <li class="slist">
+            <a class="slink" href="#">
+              <img src="images/icons/edit.svg"class="sidebaricons" alt="icon" />
+              <span>Edit Profile</span>
+            </a>
+          </li>
+          <li class="slist">
+            <button class="slidersignout">SIGN OUT</button>
+          </li>
+        </ul> 
+      </div>
+      <!-------->
+     
+<!-------------------------------->
+<div class="usermyeventscontainer">
+
+  <h2 id="usermyeventtableh2">ORGANISED EVENTS</h2>
+  <ul class="userresponsive-table">
+    <li class="usertable-header">
+      <div class="col col-1">Event ID</div>
+      <div class="col col-2">Date of Event</div>
+      <div class="col col-3">Last Date</div>
+      <div class="col col-4">Booked</div>
+      <div class="col col-6">More</div>
+      
+   
+      <li class="usertable-row">
+        <div class="col col-1" data-label="Event Id">102</div>
+        <div class="col col-2" data-label="Event Date">1/02/22</div>
+        <div class="col col-3" data-label="Event Last Date">2/04/22</div>
+        <div class="col col-4" data-label="Booked">4/10</div>
+        <button class="col col-5"data-label="more">MORE</button>
+      </li>
+  
+      <li class="usertable-row">
+        <div class="col col-1" data-label="Event Id">102</div>
+        <div class="col col-2" data-label="Event Date">1/02/22</div>
+        <div class="col col-3" data-label="Event Last Date">2/04/22</div>
+        <div class="col col-4" data-label="Booked">4/10</div>
+        <button class="col col-5"data-label="more">MORE</button>
+      </li>
+      <li class="usertable-row">
+        <div class="col col-1" data-label="Event Id">102</div>
+        <div class="col col-2" data-label="Event Date">1/02/22</div>
+        <div class="col col-3" data-label="Event Last Date">2/04/22</div>
+        <div class="col col-4" data-label="Booked">4/10</div>
+        <button class="col col-5"data-label="more">MORE</button>
+      </li>
+      <li class="usertable-row">
+        <div class="col col-1" data-label="Event Id">102</div>
+        <div class="col col-2" data-label="Event Date">1/02/22</div>
+        <div class="col col-3" data-label="Event Last Date">2/04/22</div>
+        <div class="col col-4" data-label="Booked">4/10</div>
+        <button class="col col-5"data-label="more">MORE</button>
+      </li>
+  </ul>
+
+</div>
+<!-------------------------------->
+<div class="organeditcontainer">
+  <div class="organeditprofile-section">
+      <div class="organeditprofile-pic">
+          <img id="organprofile-pic" src="images/icons/evts1.svg" alt="Profile Picture">
+          <button type="button" id="organpic-edit"> <span class="organbox">Edit</span></button>
+      </div>
+      <input type="file" id="organpic-upload" accept="image/*" style="display: none;">
+     
+  </div>
+  <form id="addform"> 
+      <div class="organform-row">
+          <div class="organform-left">
+              <div class="organeditform-group">
+                  <label for="eventname">Event Name</label>
+                  <input type="text" id="organediteventname" >
+              </div>
+              <div class="organeditform-group">
+                  <label for="eventdate">Event Date</label>
+                  <input type="date" id="organuserediteventdate" name="eventdate">
+              </div>
+              <div class="organeditform-group">
+                  <label for="description">Description</label>
+                  <textarea id="organeditdescription" name="description" maxlength="200"></textarea>
+              </div>
+          </div>
+          <div class="organform-right">
+              <div class="organeditform-group">
+                  <label for="eventtype">Event Type</label>
+                  <input type="text" id="organediteventtype" name="eventtype">
+              </div>
+              <div class="organeditform-group">
+                  <label for="lastdate">Last Date Of Registration</label>
+                  <input type="date" id="organeditlastdate" name="lastdate">
+              </div>
+              <div class="organeditform-group">
+                  <label for="slots">Number of Slots</label>
+                  <input type="number" id="organeditslots" name="slots">
+              </div>
+          </div>
+      </div>
+      <div class="organeditbtn-container">
+          <button type="button" class="organedit-updatebtn">ADD</button>
+      </div>
+  </form>
+</div>
+<!-------------------------------->
+<div class="usereditcontainer">
+  <div class="editprofile-section">
+      <div class="editprofile-pic">
+          <img src="images/icons/profile1.svg" id="sliderprofile-pic" alt="Profile Picture">
+      </div>
+      <input type="file" id="pic-upload" accept="image/*" style="display: none;">
+      <button type="button" id="pic-edit"> <span class="box">Edit</span></button>
+      <div class="editprofile-info">
+          <p class="editusername"> xyz</p>
+          <p class="editemail">xyz@gmail.com</p>
+      </div>
+  </div>
+  <form>
+      <div class="editform-group">
+          <label for="username">OrgName</label>
+          <input type="text" id="usereditusername" >
+      </div>
+      <div class="editform-group">
+          <label for="email">Email</label>
+          <input type="email" id="usereditemail" name="email">
+      </div>
+      <div class="editform-group">
+          <label for="password">Password</label>
+          <input type="text" id="usereditpassword" name="password">
+      </div >
+      <div class="editbtn-container">
+      <button type="button" class="edit-updatebtn">UPDATE</button>
+      <!--submit type-->
+      </div>
+  </form>
+</div>
+<!-------------------------------->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="organdashslidertrigger.js"></script>
+<script src="usermyeventsunregister.js"></script>
+<script src="organaddform.js"></script>
+<script src="organedit.js"></script>
+  </body>
+</html>

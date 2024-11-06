@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="userdashslider.css">
+    <link rel="stylesheet" href="usermyeventsstyle.css">
+    <link rel="stylesheet" href="userdashedit.css">
+    
+
+
+  </head>
+  <body>
+    <div class="solid-bar">
+      <h1>DASHBOARD</h1> <!-- Replace this with your title -->
+  </div>
+  
+    <div class="wrapper">
+      <div class="sidebar">
+        <div class="profile">
+          <div class="logo">
+          </div>
+          <img src="images/icons/profile2.svg" alt="Logo" class="profile-img" />
+          <div class="profile-content">
+            
+            <h2 class="name text-white">username</h2>
+            <span class="position text-dark">xyz@gmail.com</span>
+          </div>
+        </div>
+
+        <ul class="menu">
+          <li class="slist active">
+            <a class="slink" href="#">
+              <img src="images/icons/events.svg" class="sidebaricons" alt="icon" />
+              <span>Events</span>
+            </a>
+          </li>
+          <li class="slist">
+            <a class="slink" href="#">
+              <img src="images/icons/myevents.svg" class="sidebaricons" alt="icon" />
+              <span>My Events</span>
+            </a>
+          </li>
+          <li class="slist">
+            <a class="slink" href="#">
+              <img src="images/icons/edit.svg"  class="sidebaricons" alt="icon" />
+              <span>Edit</span>
+            </a>
+          </li>
+          <li class="slist">
+            <button class="slidersignout">SIGN OUT</button>
+          </li>
+        </ul> 
+      </div>
+      <!---->
+     
+<!-------------------------------->
+<div class="slider">
+  <div id="particles-js"></div>
+  <div class="slider-wrapper flex">
+    <!-- Slides will be added here by JavaScript -->
+  </div>
+  <div class="arrows">
+    <a href="#" title="Previous" class="arrow slider-link prev"></a>
+    <a href="#" title="Next" class="arrow slider-link next"></a>
+  </div>
+</div>
+<!-------------------------------->
+<div class="usermyeventscontainer">
+ 
+  <h2 id="usermyeventtableh2">REGISTERED EVENTS</h2>
+  <ul class="userresponsive-table">
+    <li class="usertable-header">
+      <div class="col col-1">Event Id</div>
+      <div class="col col-2">Event Name</div>
+      <div class="col col-3">Event Type</div>
+      <div class="col col-4">Date of Event</div>
+      <div class="col col-6">UNREGISTER</div>
+     
+    </li>
+    <li class="usertable-row">
+    
+      <div class="col col-1" data-label="Event Id">102</div>
+      <div class="col col-2" data-label="Event Name">robotics contests</div>
+      <div class="col col-3" data-label="Event type">contests</div>
+      <div class="col col-4" data-label="Date of Event">Pending</div>
+      <button class="col col-5"data-label="unregister">UNREGISTER</button>
+    </li>
+      <li class="usertable-row">
+        <div class="col col-1" data-label="Event Id">102</div>
+        <div class="col col-2" data-label="Event Name">robotics contests</div>
+        <div class="col col-3" data-label="Event type">contests</div>
+        <div class="col col-4" data-label="Date of Event">Pending</div>
+        <button class="col col-5"data-label="unregister">UNREGISTER</button>
+    </li>
+      <li class="usertable-row">
+        <div class="col col-1" data-label="Event Id">102</div>
+        <div class="col col-2" data-label="Event Name">robotics contests</div>
+        <div class="col col-3" data-label="Event type">contests</div>
+        <div class="col col-4" data-label="Date of Event">Pending</div>
+        <button class="col col-5"data-label="unregister">UNREGISTER</button>
+    </li>
+    <li class="usertable-row">
+      <div class="col col-1" data-label="Event Id">102</div>
+      <div class="col col-2" data-label="Event Name">robotics contests</div>
+      <div class="col col-3" data-label="Event type">contests</div>
+      <div class="col col-4" data-label="Date of Event">Pending</div>
+      <button class="col col-5"data-label="unregister">UNREGISTER</button>
+    </li>
+  </ul>
+</div>
+<!-------------------------------->
+<div class="usereditcontainer">
+  <div class="editprofile-section">
+      <div class="editprofile-pic">
+          <img id="profile-pic" src="images/icons/profile2.svg" alt="Profile Picture">
+      </div>
+      <input type="file" id="pic-upload" accept="image/*" style="display: none;">
+      <button type="button" id="pic-edit"> <span class="box">Edit</span></button>
+   <!--   <div class="editprofile-info">
+          <p class="editusername"> xyz</p>
+          <p class="editemail">xyz@gmail.com</p>
+      </div>-->
+  </div>
+  <form>
+      <div class="editform-group">
+          <label for="username">UserName</label>
+          <input type="text" id="usereditusername" >
+      </div>
+      <div class="editform-group">
+          <label for="email">Email</label>
+          <input type="email" id="usereditemail" name="email">
+      </div>
+      <div class="editform-group">
+          <label for="password">Password</label>
+          <input type="text" id="usereditpassword" name="password">
+      </div >
+      <div class="editbtn-container">
+      <button type="button" class="edit-updatebtn">UPDATE</button>
+      <!--submit type-->
+      </div>
+  </form>
+</div>
+<!-------------------------------->
+
+<!-------------------------------->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script> 
+   <!-- <script src="jquery.min.js"></script>-->
+   <!-- <script src="TweenMax.min.js"></script>-->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="userdashslidertrigger.js"></script>
+<script src="userdashslider.js"></script>
+<script src="usermyeventsunregister.js"></script>
+<script src="editprofilepic.js"></script>
+<script src="useredit.js"></script><!--edit form-->
+<script src="userparticle.js"></script>
+  </body>
+</html>
